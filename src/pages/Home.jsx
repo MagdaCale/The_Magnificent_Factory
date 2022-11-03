@@ -1,7 +1,29 @@
 import { useEffect, useState } from "react"
 import Dashboard from "./Dashboard"
+import Navigation from "../components/nav/Navigation"
 
-const Home = () => {
+
+const Home = (props) => {
+
+    const [user, setUser] = useState()
+    const [component, setComponent] = useState(<Dashboard />)
+    
+    useEffect(() => {
+        const token = localStorage.getItem('token')
+        setUser(token)
+    }, [])
+    return (
+        <div>
+            <Navigation setcomponent={setComponent} />
+            <div className="Home">{component}</div>
+        </div>
+
+    )
+}
+
+export default Home
+
+/* const Home = () => {
     const [workers, setWorkers] = useState([])
 
     useEffect(() => {
@@ -33,6 +55,4 @@ const Home = () => {
             </section>
         </>
     )
-}
-
-export default Home
+} */

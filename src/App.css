@@ -1,3 +1,49 @@
 .App {
   text-align: center;
 }
+
+.Navigation{
+  display: flex;
+  justify-content: space-around;
+  cursor: pointer;
+  background-color: blanchedalmond;
+}
+
+.Dashboard{
+  text-align: center;
+}
+
+.Header{
+  text-align: center;
+}
+
+.MachineList{
+  margin-left: 200px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.MachineItem{
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 10px;
+  width: 200px;
+  height: 200px;
+}
+
+.NavigationM{
+  cursor: pointer;
+  width: 180px;
+  background-color: burlywood;
+}
+
+.AddMachine{
+  display: flex;
+  margin-left: 200px;
+}
+
+
+.selectfield{
+  width: 100px;
+}

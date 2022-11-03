@@ -1,8 +1,10 @@
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
-import LoginForm from "../login/LoginForm"
+import LoginForm from "../components/login/LoginForm"
+
 
 const AdminLogin = () => {
+    
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
     const nav = useNavigate()
